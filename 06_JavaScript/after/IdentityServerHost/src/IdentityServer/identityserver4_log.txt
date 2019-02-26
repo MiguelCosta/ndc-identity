@@ -1,0 +1,747 @@
+2018-12-31 13:47:00.374 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2018-12-31 13:47:00.443 -05:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-12-31 13:47:00.460 -05:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2018-12-31 13:47:00.460 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2018-12-31 13:47:00.460 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2018-12-31 13:47:00.460 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2018-12-31 13:47:00.460 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2018-12-31 13:47:00.460 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2018-12-31 13:47:01.114 -05:00 [DBG] Login Url: /Account/Login
+2018-12-31 13:47:01.117 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2018-12-31 13:47:01.117 -05:00 [DBG] Logout Url: /Account/Logout
+2018-12-31 13:47:01.117 -05:00 [DBG] ConsentUrl Url: /consent
+2018-12-31 13:47:01.117 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2018-12-31 13:47:01.117 -05:00 [DBG] Error Url: /home/error
+2018-12-31 13:47:01.117 -05:00 [DBG] Error Id Parameter: errorId
+2018-12-31 13:47:19.457 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:47:19.461 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:19.461 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:19.463 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:47:19.469 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:47:19.469 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:47:19.473 -05:00 [DBG] Start discovery request
+2018-12-31 13:47:19.519 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-12-31 13:47:19.522 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-12-31 13:47:19.522 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-12-31 13:47:19.527 -05:00 [DBG] Start authorize request
+2018-12-31 13:47:19.535 -05:00 [DBG] No user present in authorize request
+2018-12-31 13:47:19.541 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:19.561 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:19.598 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:19.614 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile email movie_api","State":"003d4c0f4a8c41308281e5e15374bffc","UiLocales":null,"Nonce":"d92e366e32704d5b8f444270ab0fe6e9","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"id_token token","scope":"openid profile email movie_api","state":"003d4c0f4a8c41308281e5e15374bffc","nonce":"d92e366e32704d5b8f444270ab0fe6e9"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:47:19.636 -05:00 [INF] Showing login: User is not authenticated
+2018-12-31 13:47:19.698 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:19.698 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:19.699 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:19.702 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:24.457 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-12-31 13:47:24.496 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:24.496 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:24.496 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:24.515 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:47:24.517 -05:00 [DBG] Adding idp claim with value: local
+2018-12-31 13:47:24.518 -05:00 [DBG] Adding amr claim with value: pwd
+2018-12-31 13:47:24.527 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:47:24.528 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:24.534 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:47:24.535 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:47:24.535 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:47:24.543 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:47:24.548 -05:00 [DBG] User in authorize request: user5
+2018-12-31 13:47:24.549 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:24.549 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:24.549 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:24.549 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user5","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile email movie_api","State":"003d4c0f4a8c41308281e5e15374bffc","UiLocales":null,"Nonce":"d92e366e32704d5b8f444270ab0fe6e9","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a749dba8de28c30fcaace459d3be3fb8","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"id_token token","scope":"openid profile email movie_api","state":"003d4c0f4a8c41308281e5e15374bffc","nonce":"d92e366e32704d5b8f444270ab0fe6e9"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:47:24.551 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:47:24.565 -05:00 [DBG] user_consent grant with value: movie_client|user5 not found in store.
+2018-12-31 13:47:24.566 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:47:24.566 -05:00 [INF] Showing consent: User has not yet consented
+2018-12-31 13:47:24.585 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:24.585 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:24.585 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:24.585 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:25.354 -05:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-12-31 13:47:25.374 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:25.374 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:25.374 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:25.389 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:25.393 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:47:25.394 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:47:25.394 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:47:25.394 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:47:25.399 -05:00 [DBG] User in authorize request: user5
+2018-12-31 13:47:25.399 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:25.399 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:25.400 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:25.400 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user5","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile email movie_api","State":"003d4c0f4a8c41308281e5e15374bffc","UiLocales":null,"Nonce":"d92e366e32704d5b8f444270ab0fe6e9","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a749dba8de28c30fcaace459d3be3fb8","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"id_token token","scope":"openid profile email movie_api","state":"003d4c0f4a8c41308281e5e15374bffc","nonce":"d92e366e32704d5b8f444270ab0fe6e9"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:47:25.400 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:47:25.400 -05:00 [DBG] user_consent grant with value: movie_client|user5 not found in store.
+2018-12-31 13:47:25.400 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:47:25.408 -05:00 [INF] User consented to scopes: ["openid","profile","email","movie_api"]
+2018-12-31 13:47:25.410 -05:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","email","movie_api"]
+2018-12-31 13:47:25.414 -05:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: user5
+2018-12-31 13:47:25.429 -05:00 [DBG] Creating Implicit Flow response.
+2018-12-31 13:47:25.440 -05:00 [DBG] Getting claims for access token for client: movie_client
+2018-12-31 13:47:25.440 -05:00 [DBG] Getting claims for access token for subject: user5
+2018-12-31 13:47:25.446 -05:00 [DBG] Get profile called for subject user5 from client Moive Review App with claim types ["role"] via ClaimsProviderAccessToken
+2018-12-31 13:47:25.448 -05:00 [DBG] Issued claims: ["role"]
+2018-12-31 13:47:25.513 -05:00 [DBG] Getting claims for identity token for subject: user5 and client: movie_client
+2018-12-31 13:47:25.513 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 13:47:25.520 -05:00 [INF] Authorize endpoint response
+{"SubjectId":"user5","ClientId":"movie_client","RedirectUri":"http://localhost:32361/callback.html","State":"003d4c0f4a8c41308281e5e15374bffc","Scope":"openid profile email movie_api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2018-12-31 13:47:25.537 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:47:25.538 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:47:25.648 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:47:25.648 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:25.648 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:25.649 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:47:25.649 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:47:25.649 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:47:25.649 -05:00 [DBG] Start discovery request
+2018-12-31 13:47:25.655 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:32361
+2018-12-31 13:47:25.656 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:25.656 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:25.656 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 13:47:25.656 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 13:47:25.656 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 13:47:25.666 -05:00 [DBG] Start key discovery request
+2018-12-31 13:47:25.699 -05:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:32361
+2018-12-31 13:47:25.699 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:25.699 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:25.704 -05:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:32361
+2018-12-31 13:47:25.704 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:25.704 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:25.705 -05:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-12-31 13:47:25.707 -05:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-12-31 13:47:25.707 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-12-31 13:47:25.715 -05:00 [DBG] Start userinfo request
+2018-12-31 13:47:25.718 -05:00 [DBG] Bearer token found in header
+2018-12-31 13:47:25.744 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:25.750 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:25.750 -05:00 [DBG] IsActive called from: AccessTokenValidation
+2018-12-31 13:47:25.751 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 13:47:25.753 -05:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546282045,"exp":1546285645,"iss":"http://localhost:1941","aud":["http://localhost:1941/resources","movie_api"],"client_id":"movie_client","sub":"user5","auth_time":1546282044,"idp":"local","role":"Admin","scope":["openid","profile","email","movie_api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 13:47:25.754 -05:00 [DBG] IsActive called from: UserInfoRequestValidation
+2018-12-31 13:47:25.760 -05:00 [DBG] Creating userinfo response
+2018-12-31 13:47:25.765 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:47:25.768 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:47:25.771 -05:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2018-12-31 13:47:25.771 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:47:25.771 -05:00 [DBG] Get profile called for subject user5 from client Moive Review App with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2018-12-31 13:47:25.771 -05:00 [DBG] Issued claims: ["name","email"]
+2018-12-31 13:47:25.771 -05:00 [INF] Profile service returned the following claim types: name email
+2018-12-31 13:47:25.772 -05:00 [DBG] End userinfo request
+2018-12-31 13:47:25.789 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2018-12-31 13:47:25.789 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2018-12-31 13:47:25.789 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2018-12-31 13:47:25.791 -05:00 [DBG] Rendering check session result
+2018-12-31 13:47:25.848 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:47:25.848 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:25.848 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:25.848 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:47:25.848 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:47:25.848 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:47:25.849 -05:00 [DBG] Start discovery request
+2018-12-31 13:47:25.866 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2018-12-31 13:47:25.866 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2018-12-31 13:47:25.866 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2018-12-31 13:47:25.866 -05:00 [DBG] Rendering check session result
+2018-12-31 13:47:26.022 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:47:26.023 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:47:26.023 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:47:26.023 -05:00 [DBG] Start discovery request
+2018-12-31 13:47:26.223 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 13:47:26.224 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 13:47:26.224 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 13:47:26.224 -05:00 [DBG] Start key discovery request
+2018-12-31 13:47:31.937 -05:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2018-12-31 13:47:31.938 -05:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2018-12-31 13:47:31.938 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-12-31 13:47:31.945 -05:00 [DBG] Processing signout request for user5
+2018-12-31 13:47:31.952 -05:00 [DBG] Start end session request validation
+2018-12-31 13:47:31.962 -05:00 [DBG] Start identity token validation
+2018-12-31 13:47:31.963 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:31.963 -05:00 [DBG] Client found: movie_client / Moive Review App
+2018-12-31 13:47:31.964 -05:00 [DBG] IsActive called from: IdentityTokenValidation
+2018-12-31 13:47:31.965 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 13:47:31.965 -05:00 [DBG] Token validation success
+{"ClientId":"movie_client","ClientName":"Moive Review App","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546282045,"exp":1546282345,"iss":"http://localhost:1941","aud":"movie_client","nonce":"d92e366e32704d5b8f444270ab0fe6e9","iat":1546282045,"at_hash":"S593Z1KX2rYM-zScBlw1MA","sid":"a749dba8de28c30fcaace459d3be3fb8","sub":"user5","auth_time":1546282044,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 13:47:31.970 -05:00 [INF] End session request validation success
+{"ClientId":"movie_client","ClientName":"Moive Review App","SubjectId":"user5","PostLogOutUri":"http://localhost:32361/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImMzMzJjYWRhYzk2MmFiZTFhNTIxMTVmMmM5OGY4YjI5IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDYyODIwNDUsImV4cCI6MTU0NjI4MjM0NSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDoxOTQxIiwiYXVkIjoibW92aWVfY2xpZW50Iiwibm9uY2UiOiJkOTJlMzY2ZTMyNzA0ZDViOGY0NDQyNzBhYjBmZTZlOSIsImlhdCI6MTU0NjI4MjA0NSwiYXRfaGFzaCI6IlM1OTNaMUtYMnJZTS16U2NCbHcxTUEiLCJzaWQiOiJhNzQ5ZGJhOGRlMjhjMzBmY2FhY2U0NTlkM2JlM2ZiOCIsInN1YiI6InVzZXI1IiwiYXV0aF90aW1lIjoxNTQ2MjgyMDQ0LCJpZHAiOiJsb2NhbCIsImFtciI6WyJwd2QiXX0.TXVJuh6848Dt-oLEQrbABfy7cMpPrspbe_W9hnhQ2YuaJHAIMZ0lUMksJA08QjW_wwjBzAi_LbaGIf0hdjIHAF5wlZZJ1sz00p50l4N26__XtzLV6B_GpufvVdAuCIyQF7ow-iLCIFSdOf-vz7U9XlMMo5Z2mxulKQOPDFaIHA0E7tFXmQJTsuc8zrwwZ7NihsdINiI9hnCjOs305NlymgU9BVItprx_c8-HS20U3MqGVmvtfUUNIgYO9gRGt13FP1WoxBKjehzkLqKlxwNl9otvCtYkE58y_sM3qhxDHtKlVLAGVYmNGqfbXkQjlRvTIx9Z-u_40VQgfVF3NrhTCA","post_logout_redirect_uri":"http://localhost:32361/index.html"},"$type":"EndSessionRequestValidationLog"}
+2018-12-31 13:47:31.970 -05:00 [DBG] Success validating end session request from movie_client
+2018-12-31 13:47:32.017 -05:00 [INF] AuthenticationScheme: idsrv signed out.
+2018-12-31 13:47:32.052 -05:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2018-12-31 13:47:32.053 -05:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2018-12-31 13:47:32.053 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-12-31 13:47:32.060 -05:00 [DBG] Processing signout callback request
+2018-12-31 13:47:32.073 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:32.073 -05:00 [DBG] No client front-channel logout URLs
+2018-12-31 13:47:32.073 -05:00 [DBG] No client back-channel logout URLs
+2018-12-31 13:47:32.073 -05:00 [INF] Successful signout callback.
+2018-12-31 13:47:32.073 -05:00 [DBG] No client front-channel iframe urls
+2018-12-31 13:47:32.073 -05:00 [DBG] No client back-channel iframe urls
+2018-12-31 13:47:34.939 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:47:34.939 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:34.939 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:34.939 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:47:34.939 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:47:34.939 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:47:34.939 -05:00 [DBG] Start discovery request
+2018-12-31 13:47:34.950 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-12-31 13:47:34.950 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-12-31 13:47:34.950 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-12-31 13:47:34.950 -05:00 [DBG] Start authorize request
+2018-12-31 13:47:34.950 -05:00 [DBG] No user present in authorize request
+2018-12-31 13:47:34.950 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:34.950 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:34.951 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:34.951 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile email movie_api","State":"3dac2be1caec4c90b26903bf02e1e4ce","UiLocales":null,"Nonce":"13c08d2ba16d45798c588af581d0b809","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"id_token token","scope":"openid profile email movie_api","state":"3dac2be1caec4c90b26903bf02e1e4ce","nonce":"13c08d2ba16d45798c588af581d0b809"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:47:34.951 -05:00 [INF] Showing login: User is not authenticated
+2018-12-31 13:47:34.956 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:34.956 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:34.957 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:34.957 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:38.521 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-12-31 13:47:38.522 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:38.522 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:38.522 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:38.522 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:47:38.522 -05:00 [DBG] Adding idp claim with value: local
+2018-12-31 13:47:38.522 -05:00 [DBG] Adding amr claim with value: pwd
+2018-12-31 13:47:38.522 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:47:38.523 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:38.528 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:47:38.529 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:47:38.529 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:47:38.529 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:47:38.529 -05:00 [DBG] User in authorize request: user3
+2018-12-31 13:47:38.529 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:38.529 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:38.530 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:38.530 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user3","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile email movie_api","State":"3dac2be1caec4c90b26903bf02e1e4ce","UiLocales":null,"Nonce":"13c08d2ba16d45798c588af581d0b809","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"814c7762eb02f07b3d87eb7386a1a464","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"id_token token","scope":"openid profile email movie_api","state":"3dac2be1caec4c90b26903bf02e1e4ce","nonce":"13c08d2ba16d45798c588af581d0b809"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:47:38.530 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:47:38.530 -05:00 [DBG] user_consent grant with value: movie_client|user3 not found in store.
+2018-12-31 13:47:38.530 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:47:38.530 -05:00 [INF] Showing consent: User has not yet consented
+2018-12-31 13:47:38.536 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:38.536 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:38.537 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:38.537 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:39.352 -05:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-12-31 13:47:39.353 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:39.354 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:39.354 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:39.354 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:39.359 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:47:39.359 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:47:39.359 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:47:39.359 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:47:39.360 -05:00 [DBG] User in authorize request: user3
+2018-12-31 13:47:39.360 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:47:39.360 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:39.360 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:47:39.361 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user3","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile email movie_api","State":"3dac2be1caec4c90b26903bf02e1e4ce","UiLocales":null,"Nonce":"13c08d2ba16d45798c588af581d0b809","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"814c7762eb02f07b3d87eb7386a1a464","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"id_token token","scope":"openid profile email movie_api","state":"3dac2be1caec4c90b26903bf02e1e4ce","nonce":"13c08d2ba16d45798c588af581d0b809"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:47:39.361 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:47:39.361 -05:00 [DBG] user_consent grant with value: movie_client|user3 not found in store.
+2018-12-31 13:47:39.361 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:47:39.361 -05:00 [INF] User consented to scopes: ["openid","profile","email","movie_api"]
+2018-12-31 13:47:39.361 -05:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","email","movie_api"]
+2018-12-31 13:47:39.361 -05:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: user3
+2018-12-31 13:47:39.362 -05:00 [DBG] Creating Implicit Flow response.
+2018-12-31 13:47:39.362 -05:00 [DBG] Getting claims for access token for client: movie_client
+2018-12-31 13:47:39.362 -05:00 [DBG] Getting claims for access token for subject: user3
+2018-12-31 13:47:39.362 -05:00 [DBG] Get profile called for subject user3 from client Moive Review App with claim types ["role"] via ClaimsProviderAccessToken
+2018-12-31 13:47:39.362 -05:00 [DBG] Issued claims: ["role"]
+2018-12-31 13:47:39.365 -05:00 [DBG] Getting claims for identity token for subject: user3 and client: movie_client
+2018-12-31 13:47:39.365 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 13:47:39.367 -05:00 [INF] Authorize endpoint response
+{"SubjectId":"user3","ClientId":"movie_client","RedirectUri":"http://localhost:32361/callback.html","State":"3dac2be1caec4c90b26903bf02e1e4ce","Scope":"openid profile email movie_api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2018-12-31 13:47:39.367 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:47:39.367 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:47:39.469 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:47:39.469 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:39.469 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:39.470 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:47:39.470 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:47:39.470 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:47:39.470 -05:00 [DBG] Start discovery request
+2018-12-31 13:47:39.477 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:32361
+2018-12-31 13:47:39.477 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:39.477 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:39.477 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 13:47:39.477 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 13:47:39.478 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 13:47:39.478 -05:00 [DBG] Start key discovery request
+2018-12-31 13:47:39.501 -05:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:32361
+2018-12-31 13:47:39.501 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:39.501 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:39.505 -05:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:32361
+2018-12-31 13:47:39.505 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:39.505 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:39.505 -05:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-12-31 13:47:39.505 -05:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-12-31 13:47:39.506 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-12-31 13:47:39.506 -05:00 [DBG] Start userinfo request
+2018-12-31 13:47:39.506 -05:00 [DBG] Bearer token found in header
+2018-12-31 13:47:39.506 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:39.506 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:39.506 -05:00 [DBG] IsActive called from: AccessTokenValidation
+2018-12-31 13:47:39.507 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 13:47:39.507 -05:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546282059,"exp":1546285659,"iss":"http://localhost:1941","aud":["http://localhost:1941/resources","movie_api"],"client_id":"movie_client","sub":"user3","auth_time":1546282058,"idp":"local","role":"Reviewer","scope":["openid","profile","email","movie_api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 13:47:39.507 -05:00 [DBG] IsActive called from: UserInfoRequestValidation
+2018-12-31 13:47:39.507 -05:00 [DBG] Creating userinfo response
+2018-12-31 13:47:39.507 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:47:39.507 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:47:39.507 -05:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2018-12-31 13:47:39.507 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:47:39.507 -05:00 [DBG] Get profile called for subject user3 from client Moive Review App with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2018-12-31 13:47:39.507 -05:00 [DBG] Issued claims: ["name","email"]
+2018-12-31 13:47:39.507 -05:00 [INF] Profile service returned the following claim types: name email
+2018-12-31 13:47:39.507 -05:00 [DBG] End userinfo request
+2018-12-31 13:47:39.524 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2018-12-31 13:47:39.524 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2018-12-31 13:47:39.525 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2018-12-31 13:47:39.525 -05:00 [DBG] Rendering check session result
+2018-12-31 13:47:39.578 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:47:39.579 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:47:39.579 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:47:39.579 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:47:39.579 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:47:39.579 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:47:39.579 -05:00 [DBG] Start discovery request
+2018-12-31 13:47:39.607 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2018-12-31 13:47:39.607 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2018-12-31 13:47:39.607 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2018-12-31 13:47:39.607 -05:00 [DBG] Rendering check session result
+2018-12-31 13:47:44.648 -05:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2018-12-31 13:47:44.648 -05:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2018-12-31 13:47:44.648 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-12-31 13:47:44.649 -05:00 [DBG] Processing signout request for user3
+2018-12-31 13:47:44.649 -05:00 [DBG] Start end session request validation
+2018-12-31 13:47:44.649 -05:00 [DBG] Start identity token validation
+2018-12-31 13:47:44.650 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:44.650 -05:00 [DBG] Client found: movie_client / Moive Review App
+2018-12-31 13:47:44.651 -05:00 [DBG] IsActive called from: IdentityTokenValidation
+2018-12-31 13:47:44.651 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 13:47:44.651 -05:00 [DBG] Token validation success
+{"ClientId":"movie_client","ClientName":"Moive Review App","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546282059,"exp":1546282359,"iss":"http://localhost:1941","aud":"movie_client","nonce":"13c08d2ba16d45798c588af581d0b809","iat":1546282059,"at_hash":"oJ5HKZAhCApGgNcGNd0jpg","sid":"814c7762eb02f07b3d87eb7386a1a464","sub":"user3","auth_time":1546282058,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 13:47:44.651 -05:00 [INF] End session request validation success
+{"ClientId":"movie_client","ClientName":"Moive Review App","SubjectId":"user3","PostLogOutUri":"http://localhost:32361/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImMzMzJjYWRhYzk2MmFiZTFhNTIxMTVmMmM5OGY4YjI5IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDYyODIwNTksImV4cCI6MTU0NjI4MjM1OSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDoxOTQxIiwiYXVkIjoibW92aWVfY2xpZW50Iiwibm9uY2UiOiIxM2MwOGQyYmExNmQ0NTc5OGM1ODhhZjU4MWQwYjgwOSIsImlhdCI6MTU0NjI4MjA1OSwiYXRfaGFzaCI6Im9KNUhLWkFoQ0FwR2dOY0dOZDBqcGciLCJzaWQiOiI4MTRjNzc2MmViMDJmMDdiM2Q4N2ViNzM4NmExYTQ2NCIsInN1YiI6InVzZXIzIiwiYXV0aF90aW1lIjoxNTQ2MjgyMDU4LCJpZHAiOiJsb2NhbCIsImFtciI6WyJwd2QiXX0.nFjmt5u_5BChLw1-RHP4Kx_EYfz1PORuT-LMXL2XQVWHqbsQKAqredMhmneZZERTq_uitlnbImX3wZ7qM0pOH-udv7U17WrwAoDoBs8XDMPZ0ZEz3c_HEqN1lny2FYNrdAt3QINF6iZwSl0PXzTZKenrNjPYxvsrgqIIxzLujWu-hhKD_c09fZ8EFUUOfe2ZstXe3iCfpgLOlrF0V3DyChAxhB6zYD5PHz_PsJ4TmCLobtqUXyKMPZuA7f3EtIfUJS9uStMmBKAK1-DBPcyPk8Hu3B7eH26hn2Dp-rfrGr80SnZOV8e2gN6CAEjsV4WeKwXPL9i70HaAGMPbS34eQA","post_logout_redirect_uri":"http://localhost:32361/index.html"},"$type":"EndSessionRequestValidationLog"}
+2018-12-31 13:47:44.651 -05:00 [DBG] Success validating end session request from movie_client
+2018-12-31 13:47:44.658 -05:00 [INF] AuthenticationScheme: idsrv signed out.
+2018-12-31 13:47:44.689 -05:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2018-12-31 13:47:44.690 -05:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2018-12-31 13:47:44.690 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-12-31 13:47:44.690 -05:00 [DBG] Processing signout callback request
+2018-12-31 13:47:44.690 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:47:44.690 -05:00 [DBG] No client front-channel logout URLs
+2018-12-31 13:47:44.690 -05:00 [DBG] No client back-channel logout URLs
+2018-12-31 13:47:44.690 -05:00 [INF] Successful signout callback.
+2018-12-31 13:47:44.691 -05:00 [DBG] No client front-channel iframe urls
+2018-12-31 13:47:44.691 -05:00 [DBG] No client back-channel iframe urls
+2018-12-31 13:56:46.389 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2018-12-31 13:56:46.432 -05:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-12-31 13:56:46.443 -05:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2018-12-31 13:56:46.443 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2018-12-31 13:56:46.443 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2018-12-31 13:56:46.443 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2018-12-31 13:56:46.443 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2018-12-31 13:56:46.443 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2018-12-31 13:56:46.697 -05:00 [DBG] Login Url: /Account/Login
+2018-12-31 13:56:46.700 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2018-12-31 13:56:46.700 -05:00 [DBG] Logout Url: /Account/Logout
+2018-12-31 13:56:46.700 -05:00 [DBG] ConsentUrl Url: /consent
+2018-12-31 13:56:46.700 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2018-12-31 13:56:46.700 -05:00 [DBG] Error Url: /home/error
+2018-12-31 13:56:46.700 -05:00 [DBG] Error Id Parameter: errorId
+2018-12-31 13:57:05.667 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:57:05.671 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:05.671 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:05.674 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:57:05.680 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:57:05.680 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:57:05.685 -05:00 [DBG] Start discovery request
+2018-12-31 13:57:05.740 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-12-31 13:57:05.744 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-12-31 13:57:05.744 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-12-31 13:57:05.748 -05:00 [DBG] Start authorize request
+2018-12-31 13:57:05.762 -05:00 [DBG] No user present in authorize request
+2018-12-31 13:57:05.767 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:05.789 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:05.796 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:05.834 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:05.852 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile email movie_api","State":"bdcdaf57fea64226809a3303205634ac","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"code","scope":"openid profile email movie_api","state":"bdcdaf57fea64226809a3303205634ac","code_challenge":"FzNCzw4loCJzID5WL3AGbMatB1hGhqxevJTsUMHQuFs","code_challenge_method":"S256"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:57:05.877 -05:00 [INF] Showing login: User is not authenticated
+2018-12-31 13:57:05.937 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:05.937 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:05.937 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:05.937 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:05.941 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:15.449 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-12-31 13:57:15.493 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:15.493 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:15.493 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:15.494 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:15.519 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:57:15.523 -05:00 [DBG] Adding idp claim with value: local
+2018-12-31 13:57:15.523 -05:00 [DBG] Adding amr claim with value: pwd
+2018-12-31 13:57:15.534 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:57:15.535 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:15.550 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:57:15.551 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:57:15.551 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:57:15.558 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:57:15.563 -05:00 [DBG] User in authorize request: user5
+2018-12-31 13:57:15.563 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:15.564 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:15.564 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:15.564 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:15.564 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user5","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile email movie_api","State":"bdcdaf57fea64226809a3303205634ac","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"0e4245aba0361f4cb15e344594b34022","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"code","scope":"openid profile email movie_api","state":"bdcdaf57fea64226809a3303205634ac","code_challenge":"FzNCzw4loCJzID5WL3AGbMatB1hGhqxevJTsUMHQuFs","code_challenge_method":"S256"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:57:15.566 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:57:15.583 -05:00 [DBG] user_consent grant with value: movie_client|user5 not found in store.
+2018-12-31 13:57:15.583 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:57:15.584 -05:00 [INF] Showing consent: User has not yet consented
+2018-12-31 13:57:15.606 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:15.607 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:15.607 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:15.607 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:15.607 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:18.188 -05:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-12-31 13:57:18.216 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:18.216 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:18.217 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:18.217 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:18.233 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:18.341 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:57:18.341 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:57:18.341 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:57:18.342 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:57:18.348 -05:00 [DBG] User in authorize request: user5
+2018-12-31 13:57:18.348 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:18.348 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:18.348 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:18.349 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:18.349 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user5","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile email movie_api","State":"bdcdaf57fea64226809a3303205634ac","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"0e4245aba0361f4cb15e344594b34022","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"code","scope":"openid profile email movie_api","state":"bdcdaf57fea64226809a3303205634ac","code_challenge":"FzNCzw4loCJzID5WL3AGbMatB1hGhqxevJTsUMHQuFs","code_challenge_method":"S256"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:57:18.349 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:57:18.349 -05:00 [DBG] user_consent grant with value: movie_client|user5 not found in store.
+2018-12-31 13:57:18.349 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:57:18.361 -05:00 [INF] User consented to scopes: ["openid","profile","email","movie_api"]
+2018-12-31 13:57:18.363 -05:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","email","movie_api"]
+2018-12-31 13:57:18.369 -05:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: user5
+2018-12-31 13:57:18.397 -05:00 [DBG] Creating Authorization Code Flow response.
+2018-12-31 13:57:18.427 -05:00 [INF] Authorize endpoint response
+{"SubjectId":"user5","ClientId":"movie_client","RedirectUri":"http://localhost:32361/callback.html","State":"bdcdaf57fea64226809a3303205634ac","Scope":"openid profile email movie_api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2018-12-31 13:57:18.449 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:57:18.449 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:57:44.213 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:57:44.214 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:44.214 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:44.214 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:57:44.214 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:57:44.215 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:57:44.215 -05:00 [DBG] Start discovery request
+2018-12-31 13:57:44.232 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-12-31 13:57:44.233 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-12-31 13:57:44.233 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-12-31 13:57:44.233 -05:00 [DBG] Start authorize request
+2018-12-31 13:57:44.233 -05:00 [DBG] User in authorize request: user5
+2018-12-31 13:57:44.233 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:44.233 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:44.233 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:44.234 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:44.234 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user5","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile email movie_api","State":"67d572cffc2d4d56968db92692faace4","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"0e4245aba0361f4cb15e344594b34022","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"code","scope":"openid profile email movie_api","state":"67d572cffc2d4d56968db92692faace4","code_challenge":"HMgBOFXH6vB4z9yeoM21aHABOwUfUF1e9s0Y-t-8S-A","code_challenge_method":"S256"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:57:44.234 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:57:44.240 -05:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2018-12-31 13:57:44.240 -05:00 [DBG] Creating Authorization Code Flow response.
+2018-12-31 13:57:44.241 -05:00 [INF] Authorize endpoint response
+{"SubjectId":"user5","ClientId":"movie_client","RedirectUri":"http://localhost:32361/callback.html","State":"67d572cffc2d4d56968db92692faace4","Scope":"openid profile email movie_api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2018-12-31 13:57:47.768 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:57:47.768 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:47.768 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:47.768 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:57:47.769 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:57:47.769 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:57:47.769 -05:00 [DBG] Start discovery request
+2018-12-31 13:57:47.782 -05:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:32361
+2018-12-31 13:57:47.782 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:47.782 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:47.782 -05:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-12-31 13:57:47.790 -05:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-12-31 13:57:47.790 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-12-31 13:57:47.804 -05:00 [DBG] Start token request.
+2018-12-31 13:57:47.814 -05:00 [DBG] Start client validation
+2018-12-31 13:57:47.820 -05:00 [DBG] Start parsing Basic Authentication secret
+2018-12-31 13:57:47.824 -05:00 [DBG] Start parsing for secret in post body
+2018-12-31 13:57:47.825 -05:00 [DBG] client id without secret found
+2018-12-31 13:57:47.825 -05:00 [DBG] Parser found secret: PostBodySecretParser
+2018-12-31 13:57:47.825 -05:00 [DBG] Secret id found: movie_client
+2018-12-31 13:57:47.825 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:47.825 -05:00 [DBG] Public Client - skipping secret validation success
+2018-12-31 13:57:47.825 -05:00 [DBG] Client validation success
+2018-12-31 13:57:47.833 -05:00 [DBG] Start token request validation
+2018-12-31 13:57:47.844 -05:00 [DBG] Start validation of authorization code token request
+2018-12-31 13:57:47.856 -05:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2018-12-31 13:57:47.860 -05:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2018-12-31 13:57:47.860 -05:00 [DBG] Validation of authorization code token request success
+2018-12-31 13:57:47.863 -05:00 [INF] Token request validation success
+{"ClientId":"movie_client","ClientName":"Moive Review App","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"9929f09fc48dd4452231b3601de31c315d9519e89eff4b7066255b7b53796fde","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"movie_client","code":"9929f09fc48dd4452231b3601de31c315d9519e89eff4b7066255b7b53796fde","redirect_uri":"http://localhost:32361/callback.html","code_verifier":"68a3c631a7204d23970c6d7569c9bceb19d316bedc024b0ebd294d4ee8127f5ccf1dd1a83a3d49169bb313899b0a7c1a","grant_type":"authorization_code"},"$type":"TokenRequestValidationLog"}
+2018-12-31 13:57:47.880 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:47.894 -05:00 [DBG] Getting claims for access token for client: movie_client
+2018-12-31 13:57:47.895 -05:00 [DBG] Getting claims for access token for subject: user5
+2018-12-31 13:57:47.900 -05:00 [DBG] Get profile called for subject user5 from client Moive Review App with claim types ["role"] via ClaimsProviderAccessToken
+2018-12-31 13:57:47.903 -05:00 [DBG] Issued claims: ["role"]
+2018-12-31 13:57:47.945 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:47.956 -05:00 [DBG] Getting claims for identity token for subject: user5 and client: movie_client
+2018-12-31 13:57:47.956 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 13:57:47.963 -05:00 [DBG] Token request success.
+2018-12-31 13:57:47.980 -05:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:32361
+2018-12-31 13:57:47.980 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:47.980 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:47.986 -05:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:32361
+2018-12-31 13:57:47.986 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:47.986 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:47.986 -05:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-12-31 13:57:47.988 -05:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-12-31 13:57:47.988 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-12-31 13:57:47.999 -05:00 [DBG] Start userinfo request
+2018-12-31 13:57:48.004 -05:00 [DBG] Bearer token found in header
+2018-12-31 13:57:48.035 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:48.039 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:48.039 -05:00 [DBG] IsActive called from: AccessTokenValidation
+2018-12-31 13:57:48.040 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 13:57:48.042 -05:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546282667,"exp":1546286267,"iss":"http://localhost:1941","aud":["http://localhost:1941/resources","movie_api"],"client_id":"movie_client","sub":"user5","auth_time":1546282635,"idp":"local","role":"Admin","scope":["openid","profile","email","movie_api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 13:57:48.043 -05:00 [DBG] IsActive called from: UserInfoRequestValidation
+2018-12-31 13:57:48.049 -05:00 [DBG] Creating userinfo response
+2018-12-31 13:57:48.054 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:57:48.057 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:57:48.061 -05:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2018-12-31 13:57:48.061 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:57:48.061 -05:00 [DBG] Get profile called for subject user5 from client Moive Review App with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2018-12-31 13:57:48.061 -05:00 [DBG] Issued claims: ["name","email"]
+2018-12-31 13:57:48.061 -05:00 [INF] Profile service returned the following claim types: name email
+2018-12-31 13:57:48.062 -05:00 [DBG] End userinfo request
+2018-12-31 13:57:48.077 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2018-12-31 13:57:48.078 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2018-12-31 13:57:48.078 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2018-12-31 13:57:48.080 -05:00 [DBG] Rendering check session result
+2018-12-31 13:57:48.397 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:57:48.397 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:48.397 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:48.397 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:57:48.398 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:57:48.398 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:57:48.398 -05:00 [DBG] Start discovery request
+2018-12-31 13:57:48.518 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2018-12-31 13:57:48.518 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2018-12-31 13:57:48.518 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2018-12-31 13:57:48.518 -05:00 [DBG] Rendering check session result
+2018-12-31 13:57:48.571 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:57:48.571 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:57:48.571 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:57:48.571 -05:00 [DBG] Start discovery request
+2018-12-31 13:57:48.801 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 13:57:48.802 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 13:57:48.802 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 13:57:48.806 -05:00 [DBG] Start key discovery request
+2018-12-31 13:57:53.425 -05:00 [DBG] Request path /connect/endsession matched to endpoint type Endsession
+2018-12-31 13:57:53.427 -05:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionEndpoint
+2018-12-31 13:57:53.427 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionEndpoint for /connect/endsession
+2018-12-31 13:57:53.434 -05:00 [DBG] Processing signout request for user5
+2018-12-31 13:57:53.442 -05:00 [DBG] Start end session request validation
+2018-12-31 13:57:53.451 -05:00 [DBG] Start identity token validation
+2018-12-31 13:57:53.452 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:53.452 -05:00 [DBG] Client found: movie_client / Moive Review App
+2018-12-31 13:57:53.456 -05:00 [DBG] IsActive called from: IdentityTokenValidation
+2018-12-31 13:57:53.456 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 13:57:53.457 -05:00 [DBG] Token validation success
+{"ClientId":"movie_client","ClientName":"Moive Review App","ValidateLifetime":false,"AccessTokenType":null,"ExpectedScope":null,"TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546282667,"exp":1546282967,"iss":"http://localhost:1941","aud":"movie_client","iat":1546282667,"at_hash":"UiJtyqKo6Gdmjn1pXWiqqw","sid":"0e4245aba0361f4cb15e344594b34022","sub":"user5","auth_time":1546282635,"idp":"local","amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 13:57:53.459 -05:00 [INF] End session request validation success
+{"ClientId":"movie_client","ClientName":"Moive Review App","SubjectId":"user5","PostLogOutUri":"http://localhost:32361/index.html","State":null,"Raw":{"id_token_hint":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImMzMzJjYWRhYzk2MmFiZTFhNTIxMTVmMmM5OGY4YjI5IiwidHlwIjoiSldUIn0.eyJuYmYiOjE1NDYyODI2NjcsImV4cCI6MTU0NjI4Mjk2NywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDoxOTQxIiwiYXVkIjoibW92aWVfY2xpZW50IiwiaWF0IjoxNTQ2MjgyNjY3LCJhdF9oYXNoIjoiVWlKdHlxS282R2Rtam4xcFhXaXFxdyIsInNpZCI6IjBlNDI0NWFiYTAzNjFmNGNiMTVlMzQ0NTk0YjM0MDIyIiwic3ViIjoidXNlcjUiLCJhdXRoX3RpbWUiOjE1NDYyODI2MzUsImlkcCI6ImxvY2FsIiwiYW1yIjpbInB3ZCJdfQ.m8-kwSIQzS6wHonMD_x_KaKoMhxwpIucbHgk35esMOlem6cfbtsVbJwPC2zufIvp78Kt1nYjX-G0D3TWNQSkIyIwg2QfFkena_NkiXXOguFGq9xG-uxPUjPBTDNciIMwN1bjmcqLa7Nn9qhhmcfeNX_LXsvbNyQMFcg26YaVPqJmyIm4mLbnYP78SmTb8bFKOXHHUeNaBHjIA9Gy6-HgEUNuNj24d0WlszJ4_FCYxJWuVeSoXdwZ2L4NrY-Y8bklQafavGxBo-tTmdXdlsGaIRfF76mzTfynyC9sKom2qf9t2DSb7mhzUwEkPelFCpF_5yDW7ijkUxS4Q2tlEjOCAg","post_logout_redirect_uri":"http://localhost:32361/index.html"},"$type":"EndSessionRequestValidationLog"}
+2018-12-31 13:57:53.460 -05:00 [DBG] Success validating end session request from movie_client
+2018-12-31 13:57:53.523 -05:00 [INF] AuthenticationScheme: idsrv signed out.
+2018-12-31 13:57:53.594 -05:00 [DBG] Request path /connect/endsession/callback matched to endpoint type Endsession
+2018-12-31 13:57:53.596 -05:00 [DBG] Endpoint enabled: Endsession, successfully created handler: IdentityServer4.Endpoints.EndSessionCallbackEndpoint
+2018-12-31 13:57:53.597 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.EndSessionCallbackEndpoint for /connect/endsession/callback
+2018-12-31 13:57:53.607 -05:00 [DBG] Processing signout callback request
+2018-12-31 13:57:53.625 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:53.625 -05:00 [DBG] No client front-channel logout URLs
+2018-12-31 13:57:53.625 -05:00 [DBG] No client back-channel logout URLs
+2018-12-31 13:57:53.625 -05:00 [INF] Successful signout callback.
+2018-12-31 13:57:53.625 -05:00 [DBG] No client front-channel iframe urls
+2018-12-31 13:57:53.625 -05:00 [DBG] No client back-channel iframe urls
+2018-12-31 13:57:55.574 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:57:55.575 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:55.575 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:55.575 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:57:55.575 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:57:55.575 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:57:55.575 -05:00 [DBG] Start discovery request
+2018-12-31 13:57:55.595 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-12-31 13:57:55.595 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-12-31 13:57:55.595 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-12-31 13:57:55.595 -05:00 [DBG] Start authorize request
+2018-12-31 13:57:55.596 -05:00 [DBG] No user present in authorize request
+2018-12-31 13:57:55.596 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:55.596 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:55.596 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:55.596 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:55.596 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile email movie_api","State":"eb34137cf6fd459cb782e2c47ad59109","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"code","scope":"openid profile email movie_api","state":"eb34137cf6fd459cb782e2c47ad59109","code_challenge":"56tJQUacAOuwQiw83NmcETeaQVEUZJs8DzSvnqzFg1g","code_challenge_method":"S256"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:57:55.596 -05:00 [INF] Showing login: User is not authenticated
+2018-12-31 13:57:55.602 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:55.602 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:55.602 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:55.602 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:55.603 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:58.760 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-12-31 13:57:58.761 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:58.761 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:58.761 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:58.761 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:58.761 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:57:58.761 -05:00 [DBG] Adding idp claim with value: local
+2018-12-31 13:57:58.761 -05:00 [DBG] Adding amr claim with value: pwd
+2018-12-31 13:57:58.762 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:57:58.762 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:58.768 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:57:58.768 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:57:58.768 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:57:58.768 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:57:58.769 -05:00 [DBG] User in authorize request: user3
+2018-12-31 13:57:58.769 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:58.769 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:58.769 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:58.769 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:58.769 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user3","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile email movie_api","State":"eb34137cf6fd459cb782e2c47ad59109","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"bfb4fe98ad880ff84334d32312e0489e","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"code","scope":"openid profile email movie_api","state":"eb34137cf6fd459cb782e2c47ad59109","code_challenge":"56tJQUacAOuwQiw83NmcETeaQVEUZJs8DzSvnqzFg1g","code_challenge_method":"S256"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:57:58.769 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:57:58.769 -05:00 [DBG] user_consent grant with value: movie_client|user3 not found in store.
+2018-12-31 13:57:58.770 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:57:58.770 -05:00 [INF] Showing consent: User has not yet consented
+2018-12-31 13:57:58.775 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:58.776 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:58.776 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:58.776 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:58.776 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.355 -05:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-12-31 13:57:59.356 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:59.356 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.356 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:59.357 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:59.357 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.442 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:57:59.442 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:57:59.443 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:57:59.443 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:57:59.443 -05:00 [DBG] User in authorize request: user3
+2018-12-31 13:57:59.444 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:57:59.444 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.444 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:57:59.444 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:57:59.444 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"movie_client","ClientName":"Moive Review App","RedirectUri":"http://localhost:32361/callback.html","AllowedRedirectUris":["http://localhost:32361/callback.html"],"SubjectId":"user3","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile email movie_api","State":"eb34137cf6fd459cb782e2c47ad59109","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"bfb4fe98ad880ff84334d32312e0489e","Raw":{"client_id":"movie_client","redirect_uri":"http://localhost:32361/callback.html","response_type":"code","scope":"openid profile email movie_api","state":"eb34137cf6fd459cb782e2c47ad59109","code_challenge":"56tJQUacAOuwQiw83NmcETeaQVEUZJs8DzSvnqzFg1g","code_challenge_method":"S256"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:57:59.444 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:57:59.445 -05:00 [DBG] user_consent grant with value: movie_client|user3 not found in store.
+2018-12-31 13:57:59.445 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:57:59.445 -05:00 [INF] User consented to scopes: ["openid","profile","email","movie_api"]
+2018-12-31 13:57:59.445 -05:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","email","movie_api"]
+2018-12-31 13:57:59.445 -05:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: user3
+2018-12-31 13:57:59.445 -05:00 [DBG] Creating Authorization Code Flow response.
+2018-12-31 13:57:59.446 -05:00 [INF] Authorize endpoint response
+{"SubjectId":"user3","ClientId":"movie_client","RedirectUri":"http://localhost:32361/callback.html","State":"eb34137cf6fd459cb782e2c47ad59109","Scope":"openid profile email movie_api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2018-12-31 13:57:59.446 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:57:59.447 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:57:59.758 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:57:59.758 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:59.758 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:59.758 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:57:59.758 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:57:59.758 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:57:59.758 -05:00 [DBG] Start discovery request
+2018-12-31 13:57:59.823 -05:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:32361
+2018-12-31 13:57:59.823 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:59.823 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:59.823 -05:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-12-31 13:57:59.824 -05:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-12-31 13:57:59.824 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-12-31 13:57:59.824 -05:00 [DBG] Start token request.
+2018-12-31 13:57:59.824 -05:00 [DBG] Start client validation
+2018-12-31 13:57:59.824 -05:00 [DBG] Start parsing Basic Authentication secret
+2018-12-31 13:57:59.824 -05:00 [DBG] Start parsing for secret in post body
+2018-12-31 13:57:59.824 -05:00 [DBG] client id without secret found
+2018-12-31 13:57:59.824 -05:00 [DBG] Parser found secret: PostBodySecretParser
+2018-12-31 13:57:59.824 -05:00 [DBG] Secret id found: movie_client
+2018-12-31 13:57:59.824 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.824 -05:00 [DBG] Public Client - skipping secret validation success
+2018-12-31 13:57:59.824 -05:00 [DBG] Client validation success
+2018-12-31 13:57:59.824 -05:00 [DBG] Start token request validation
+2018-12-31 13:57:59.825 -05:00 [DBG] Start validation of authorization code token request
+2018-12-31 13:57:59.825 -05:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2018-12-31 13:57:59.825 -05:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2018-12-31 13:57:59.825 -05:00 [DBG] Validation of authorization code token request success
+2018-12-31 13:57:59.825 -05:00 [INF] Token request validation success
+{"ClientId":"movie_client","ClientName":"Moive Review App","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"b92e457cd9564cc8a35d20fdb2f4474079cd6e045cb1257c3a10f52905f07be0","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"movie_client","code":"b92e457cd9564cc8a35d20fdb2f4474079cd6e045cb1257c3a10f52905f07be0","redirect_uri":"http://localhost:32361/callback.html","code_verifier":"e37d58d381104800b98e8c3de753d362abd8eb641cde4ea4b88f217ddc1bb621bdc44dc35ffa421ebb6ba96e4f84f16a","grant_type":"authorization_code"},"$type":"TokenRequestValidationLog"}
+2018-12-31 13:57:59.825 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.825 -05:00 [DBG] Getting claims for access token for client: movie_client
+2018-12-31 13:57:59.826 -05:00 [DBG] Getting claims for access token for subject: user3
+2018-12-31 13:57:59.826 -05:00 [DBG] Get profile called for subject user3 from client Moive Review App with claim types ["role"] via ClaimsProviderAccessToken
+2018-12-31 13:57:59.826 -05:00 [DBG] Issued claims: ["role"]
+2018-12-31 13:57:59.830 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.831 -05:00 [DBG] Getting claims for identity token for subject: user3 and client: movie_client
+2018-12-31 13:57:59.831 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 13:57:59.835 -05:00 [DBG] Token request success.
+2018-12-31 13:57:59.847 -05:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:32361
+2018-12-31 13:57:59.847 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:59.847 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:59.851 -05:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:32361
+2018-12-31 13:57:59.851 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:57:59.851 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:57:59.852 -05:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-12-31 13:57:59.852 -05:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-12-31 13:57:59.852 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-12-31 13:57:59.852 -05:00 [DBG] Start userinfo request
+2018-12-31 13:57:59.852 -05:00 [DBG] Bearer token found in header
+2018-12-31 13:57:59.855 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.855 -05:00 [DBG] client configuration validation for client movie_client succeeded.
+2018-12-31 13:57:59.856 -05:00 [DBG] IsActive called from: AccessTokenValidation
+2018-12-31 13:57:59.856 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 13:57:59.856 -05:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546282679,"exp":1546286279,"iss":"http://localhost:1941","aud":["http://localhost:1941/resources","movie_api"],"client_id":"movie_client","sub":"user3","auth_time":1546282678,"idp":"local","role":"Reviewer","scope":["openid","profile","email","movie_api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 13:57:59.856 -05:00 [DBG] IsActive called from: UserInfoRequestValidation
+2018-12-31 13:57:59.856 -05:00 [DBG] Creating userinfo response
+2018-12-31 13:57:59.856 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:57:59.856 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:57:59.857 -05:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at email email_verified
+2018-12-31 13:57:59.857 -05:00 [DBG] Scopes in access token: openid profile email movie_api
+2018-12-31 13:57:59.857 -05:00 [DBG] Get profile called for subject user3 from client Moive Review App with claim types ["sub","name","family_name","given_name","middle_name","nickname","preferred_username","profile","picture","website","gender","birthdate","zoneinfo","locale","updated_at","email","email_verified"] via UserInfoEndpoint
+2018-12-31 13:57:59.857 -05:00 [DBG] Issued claims: ["name","email"]
+2018-12-31 13:57:59.857 -05:00 [INF] Profile service returned the following claim types: name email
+2018-12-31 13:57:59.857 -05:00 [DBG] End userinfo request
+2018-12-31 13:57:59.892 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2018-12-31 13:57:59.892 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2018-12-31 13:57:59.892 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2018-12-31 13:57:59.893 -05:00 [DBG] Rendering check session result
+2018-12-31 13:58:00.205 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:32361
+2018-12-31 13:58:00.205 -05:00 [DBG] Client list checked and origin: http://localhost:32361 is allowed
+2018-12-31 13:58:00.205 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:32361
+2018-12-31 13:58:00.206 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:58:00.206 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:58:00.206 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:58:00.206 -05:00 [DBG] Start discovery request
+2018-12-31 13:58:00.328 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2018-12-31 13:58:00.328 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2018-12-31 13:58:00.328 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2018-12-31 13:58:00.328 -05:00 [DBG] Rendering check session result

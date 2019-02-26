@@ -1,0 +1,549 @@
+2018-12-31 13:34:18.825 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2018-12-31 13:34:18.906 -05:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-12-31 13:34:18.954 -05:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2018-12-31 13:34:18.954 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2018-12-31 13:34:18.956 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2018-12-31 13:34:18.956 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2018-12-31 13:34:18.956 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2018-12-31 13:34:18.957 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2018-12-31 13:34:19.289 -05:00 [DBG] Login Url: /Account/Login
+2018-12-31 13:34:19.292 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2018-12-31 13:34:19.292 -05:00 [DBG] Logout Url: /Account/Logout
+2018-12-31 13:34:19.293 -05:00 [DBG] ConsentUrl Url: /consent
+2018-12-31 13:34:19.293 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2018-12-31 13:34:19.293 -05:00 [DBG] Error Url: /home/error
+2018-12-31 13:34:19.293 -05:00 [DBG] Error Id Parameter: errorId
+2018-12-31 13:34:57.274 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:34:57.279 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:34:57.279 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:34:57.283 -05:00 [DBG] Start discovery request
+2018-12-31 13:34:57.393 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 13:34:57.393 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 13:34:57.393 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 13:34:57.398 -05:00 [DBG] Start key discovery request
+2018-12-31 13:34:58.566 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-12-31 13:34:58.569 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-12-31 13:34:58.569 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-12-31 13:34:58.574 -05:00 [DBG] Start authorize request
+2018-12-31 13:34:58.586 -05:00 [DBG] No user present in authorize request
+2018-12-31 13:34:58.592 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:34:58.618 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:34:58.628 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:34:58.679 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:34:58.703 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"native_client","ClientName":"Console Movie Search","RedirectUri":"http://127.0.0.1:12345/native_client_callback","AllowedRedirectUris":["http://127.0.0.1:12345/native_client_callback"],"SubjectId":"anonymous","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid movie_api","State":"dbda3d8442e943b80253a4afb545816a","UiLocales":null,"Nonce":"51ebd243ea63927d5d73a8e0d9208e48","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"code id_token","nonce":"51ebd243ea63927d5d73a8e0d9208e48","state":"dbda3d8442e943b80253a4afb545816a","code_challenge":"1YYbO_mfdfjJy2UAjmJth26-UGPHRVTlkZEww143p9E","code_challenge_method":"S256","client_id":"native_client","scope":"openid movie_api","redirect_uri":"http://127.0.0.1:12345/native_client_callback","response_mode":"form_post"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:34:58.734 -05:00 [INF] Showing login: User is not authenticated
+2018-12-31 13:34:58.811 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:34:58.812 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:34:58.812 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:34:58.812 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:34:58.816 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:03.357 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:35:03.357 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:03.357 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:35:03.357 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:35:03.389 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:35:03.393 -05:00 [DBG] Adding idp claim with value: local
+2018-12-31 13:35:03.393 -05:00 [DBG] Adding amr claim with value: pwd
+2018-12-31 13:35:03.409 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:35:03.411 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:03.443 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:35:03.444 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:35:03.444 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:35:03.452 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:35:03.457 -05:00 [DBG] User in authorize request: user5
+2018-12-31 13:35:03.457 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:35:03.457 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:03.457 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:35:03.457 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:35:03.457 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"native_client","ClientName":"Console Movie Search","RedirectUri":"http://127.0.0.1:12345/native_client_callback","AllowedRedirectUris":["http://127.0.0.1:12345/native_client_callback"],"SubjectId":"user5","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid movie_api","State":"dbda3d8442e943b80253a4afb545816a","UiLocales":null,"Nonce":"51ebd243ea63927d5d73a8e0d9208e48","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"ec9c2dbbd7f3d51f28025553006021cb","Raw":{"response_type":"code id_token","nonce":"51ebd243ea63927d5d73a8e0d9208e48","state":"dbda3d8442e943b80253a4afb545816a","code_challenge":"1YYbO_mfdfjJy2UAjmJth26-UGPHRVTlkZEww143p9E","code_challenge_method":"S256","client_id":"native_client","scope":"openid movie_api","redirect_uri":"http://127.0.0.1:12345/native_client_callback","response_mode":"form_post"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:35:03.459 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:35:03.483 -05:00 [DBG] user_consent grant with value: native_client|user5 not found in store.
+2018-12-31 13:35:03.484 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:35:03.484 -05:00 [INF] Showing consent: User has not yet consented
+2018-12-31 13:35:03.547 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:35:03.547 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:03.548 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:35:03.548 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:35:03.548 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:07.473 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:35:07.473 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:07.473 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:35:07.473 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:35:07.488 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:07.629 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 13:35:07.629 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 13:35:07.629 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 13:35:07.630 -05:00 [DBG] Start authorize callback request
+2018-12-31 13:35:07.637 -05:00 [DBG] User in authorize request: user5
+2018-12-31 13:35:07.638 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 13:35:07.638 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:07.638 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 13:35:07.638 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 13:35:07.638 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"native_client","ClientName":"Console Movie Search","RedirectUri":"http://127.0.0.1:12345/native_client_callback","AllowedRedirectUris":["http://127.0.0.1:12345/native_client_callback"],"SubjectId":"user5","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid movie_api","State":"dbda3d8442e943b80253a4afb545816a","UiLocales":null,"Nonce":"51ebd243ea63927d5d73a8e0d9208e48","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"ec9c2dbbd7f3d51f28025553006021cb","Raw":{"response_type":"code id_token","nonce":"51ebd243ea63927d5d73a8e0d9208e48","state":"dbda3d8442e943b80253a4afb545816a","code_challenge":"1YYbO_mfdfjJy2UAjmJth26-UGPHRVTlkZEww143p9E","code_challenge_method":"S256","client_id":"native_client","scope":"openid movie_api","redirect_uri":"http://127.0.0.1:12345/native_client_callback","response_mode":"form_post"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 13:35:07.638 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 13:35:07.638 -05:00 [DBG] user_consent grant with value: native_client|user5 not found in store.
+2018-12-31 13:35:07.638 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 13:35:07.647 -05:00 [INF] User consented to scopes: ["openid","movie_api"]
+2018-12-31 13:35:07.649 -05:00 [DBG] User indicated to remember consent for scopes: ["openid","movie_api"]
+2018-12-31 13:35:07.654 -05:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: user5
+2018-12-31 13:35:07.674 -05:00 [DBG] Creating Hybrid Flow response.
+2018-12-31 13:35:07.694 -05:00 [DBG] Creating Implicit Flow response.
+2018-12-31 13:35:07.704 -05:00 [DBG] Getting claims for identity token for subject: user5 and client: native_client
+2018-12-31 13:35:07.706 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 13:35:07.747 -05:00 [INF] Authorize endpoint response
+{"SubjectId":"user5","ClientId":"native_client","RedirectUri":"http://127.0.0.1:12345/native_client_callback","State":"dbda3d8442e943b80253a4afb545816a","Scope":"openid movie_api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2018-12-31 13:35:07.766 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 13:35:07.768 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 13:35:08.212 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:35:08.212 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:35:08.212 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:35:08.213 -05:00 [DBG] Start discovery request
+2018-12-31 13:35:08.220 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 13:35:08.220 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 13:35:08.220 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 13:35:08.220 -05:00 [DBG] Start key discovery request
+2018-12-31 13:35:08.401 -05:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-12-31 13:35:08.406 -05:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-12-31 13:35:08.406 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-12-31 13:35:08.413 -05:00 [DBG] Start token request.
+2018-12-31 13:35:08.422 -05:00 [DBG] Start client validation
+2018-12-31 13:35:08.428 -05:00 [DBG] Start parsing Basic Authentication secret
+2018-12-31 13:35:08.432 -05:00 [DBG] Start parsing for secret in post body
+2018-12-31 13:35:08.432 -05:00 [DBG] client id without secret found
+2018-12-31 13:35:08.432 -05:00 [DBG] Parser found secret: PostBodySecretParser
+2018-12-31 13:35:08.433 -05:00 [DBG] Secret id found: native_client
+2018-12-31 13:35:08.433 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:08.433 -05:00 [DBG] Public Client - skipping secret validation success
+2018-12-31 13:35:08.433 -05:00 [DBG] Client validation success
+2018-12-31 13:35:08.442 -05:00 [DBG] Start token request validation
+2018-12-31 13:35:08.453 -05:00 [DBG] Start validation of authorization code token request
+2018-12-31 13:35:08.463 -05:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2018-12-31 13:35:08.466 -05:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2018-12-31 13:35:08.466 -05:00 [DBG] Validation of authorization code token request success
+2018-12-31 13:35:08.469 -05:00 [INF] Token request validation success
+{"ClientId":"native_client","ClientName":"Console Movie Search","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"4fe1145e18bbf4e8df65ddb7ce83f74afcb7398e07327df1ac2c871e50d03c7c","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"authorization_code","code":"4fe1145e18bbf4e8df65ddb7ce83f74afcb7398e07327df1ac2c871e50d03c7c","redirect_uri":"http://127.0.0.1:12345/native_client_callback","code_verifier":"8640d46ffaa7c069ba2959827fb4331b144b2dd24cb8efa64fd31b9f993a7b05","client_id":"native_client"},"$type":"TokenRequestValidationLog"}
+2018-12-31 13:35:08.485 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:08.499 -05:00 [DBG] Getting claims for access token for client: native_client
+2018-12-31 13:35:08.500 -05:00 [DBG] Getting claims for access token for subject: user5
+2018-12-31 13:35:08.503 -05:00 [DBG] Get profile called for subject user5 from client Console Movie Search with claim types ["role"] via ClaimsProviderAccessToken
+2018-12-31 13:35:08.506 -05:00 [DBG] Issued claims: ["role"]
+2018-12-31 13:35:08.509 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:08.509 -05:00 [DBG] Getting claims for identity token for subject: user5 and client: native_client
+2018-12-31 13:35:08.509 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 13:35:08.518 -05:00 [DBG] Token request success.
+2018-12-31 13:35:08.545 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:35:08.545 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:35:08.545 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:35:08.545 -05:00 [DBG] Start discovery request
+2018-12-31 13:35:08.554 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 13:35:08.554 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 13:35:08.554 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 13:35:08.554 -05:00 [DBG] Start key discovery request
+2018-12-31 13:35:08.563 -05:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-12-31 13:35:08.565 -05:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-12-31 13:35:08.565 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-12-31 13:35:08.574 -05:00 [DBG] Start userinfo request
+2018-12-31 13:35:08.578 -05:00 [DBG] Bearer token found in header
+2018-12-31 13:35:08.603 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:08.606 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 13:35:08.607 -05:00 [DBG] IsActive called from: AccessTokenValidation
+2018-12-31 13:35:08.607 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 13:35:08.609 -05:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546281308,"exp":1546284908,"iss":"http://localhost:1941","aud":["http://localhost:1941/resources","movie_api"],"client_id":"native_client","sub":"user5","auth_time":1546281303,"idp":"local","role":"Admin","scope":["openid","movie_api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 13:35:08.610 -05:00 [DBG] IsActive called from: UserInfoRequestValidation
+2018-12-31 13:35:08.615 -05:00 [DBG] Creating userinfo response
+2018-12-31 13:35:08.621 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 13:35:08.623 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 13:35:08.626 -05:00 [DBG] Requested claim types: sub
+2018-12-31 13:35:08.626 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 13:35:08.626 -05:00 [DBG] Get profile called for subject user5 from client Console Movie Search with claim types ["sub"] via UserInfoEndpoint
+2018-12-31 13:35:08.626 -05:00 [DBG] Issued claims: []
+2018-12-31 13:35:08.626 -05:00 [INF] Profile service returned the following claim types: 
+2018-12-31 13:35:08.626 -05:00 [DBG] End userinfo request
+2018-12-31 13:35:12.582 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 13:35:12.582 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 13:35:12.582 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 13:35:12.582 -05:00 [DBG] Start discovery request
+2018-12-31 13:35:12.790 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 13:35:12.790 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 13:35:12.791 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 13:35:12.791 -05:00 [DBG] Start key discovery request
+2018-12-31 14:15:53.019 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2018-12-31 14:15:53.065 -05:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-12-31 14:15:53.076 -05:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2018-12-31 14:15:53.076 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2018-12-31 14:15:53.076 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2018-12-31 14:15:53.076 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2018-12-31 14:15:53.077 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2018-12-31 14:15:53.077 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2018-12-31 14:15:53.367 -05:00 [DBG] Login Url: /Account/Login
+2018-12-31 14:15:53.369 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2018-12-31 14:15:53.370 -05:00 [DBG] Logout Url: /Account/Logout
+2018-12-31 14:15:53.370 -05:00 [DBG] ConsentUrl Url: /consent
+2018-12-31 14:15:53.370 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2018-12-31 14:15:53.370 -05:00 [DBG] Error Url: /home/error
+2018-12-31 14:15:53.370 -05:00 [DBG] Error Id Parameter: errorId
+2018-12-31 14:19:23.661 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:19:23.666 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:19:23.666 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:19:23.671 -05:00 [DBG] Start discovery request
+2018-12-31 14:19:23.777 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:19:23.777 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:19:23.777 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:19:23.781 -05:00 [DBG] Start key discovery request
+2018-12-31 14:19:23.964 -05:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-12-31 14:19:23.970 -05:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-12-31 14:19:23.970 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-12-31 14:19:23.977 -05:00 [DBG] Start token request.
+2018-12-31 14:19:23.982 -05:00 [DBG] Start client validation
+2018-12-31 14:19:23.988 -05:00 [DBG] Start parsing Basic Authentication secret
+2018-12-31 14:19:23.992 -05:00 [DBG] Start parsing for secret in post body
+2018-12-31 14:19:24.008 -05:00 [DBG] client id without secret found
+2018-12-31 14:19:24.008 -05:00 [DBG] Parser found secret: PostBodySecretParser
+2018-12-31 14:19:24.008 -05:00 [DBG] Secret id found: native_client
+2018-12-31 14:19:24.022 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:19:24.022 -05:00 [DBG] Public Client - skipping secret validation success
+2018-12-31 14:19:24.022 -05:00 [DBG] Client validation success
+2018-12-31 14:19:24.032 -05:00 [DBG] Start token request validation
+2018-12-31 14:19:24.044 -05:00 [DBG] Start resource owner password token request validation
+2018-12-31 14:19:24.058 -05:00 [ERR] ["native_client"] not authorized for resource owner flow, check the AllowedGrantTypes of client, request details: {"ClientId":"native_client","ClientName":"Console Movie Search","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"user5","password":"***REDACTED***","scope":"movie_api","grant_type":"password","client_id":"native_client"},"$type":"TokenRequestValidationLog"}
+2018-12-31 14:19:44.828 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2018-12-31 14:19:44.870 -05:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-12-31 14:19:44.880 -05:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2018-12-31 14:19:44.880 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2018-12-31 14:19:44.880 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2018-12-31 14:19:44.880 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2018-12-31 14:19:44.880 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2018-12-31 14:19:44.880 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2018-12-31 14:19:45.235 -05:00 [DBG] Login Url: /Account/Login
+2018-12-31 14:19:45.237 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2018-12-31 14:19:45.237 -05:00 [DBG] Logout Url: /Account/Logout
+2018-12-31 14:19:45.237 -05:00 [DBG] ConsentUrl Url: /consent
+2018-12-31 14:19:45.237 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2018-12-31 14:19:45.237 -05:00 [DBG] Error Url: /home/error
+2018-12-31 14:19:45.237 -05:00 [DBG] Error Id Parameter: errorId
+2018-12-31 14:19:51.031 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:19:51.035 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:19:51.035 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:19:51.039 -05:00 [DBG] Start discovery request
+2018-12-31 14:19:51.142 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:19:51.143 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:19:51.143 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:19:51.147 -05:00 [DBG] Start key discovery request
+2018-12-31 14:19:51.331 -05:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-12-31 14:19:51.337 -05:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-12-31 14:19:51.337 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-12-31 14:19:51.345 -05:00 [DBG] Start token request.
+2018-12-31 14:19:51.350 -05:00 [DBG] Start client validation
+2018-12-31 14:19:51.356 -05:00 [DBG] Start parsing Basic Authentication secret
+2018-12-31 14:19:51.359 -05:00 [DBG] Start parsing for secret in post body
+2018-12-31 14:19:51.373 -05:00 [DBG] client id without secret found
+2018-12-31 14:19:51.373 -05:00 [DBG] Parser found secret: PostBodySecretParser
+2018-12-31 14:19:51.373 -05:00 [DBG] Secret id found: native_client
+2018-12-31 14:19:51.387 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:19:51.387 -05:00 [DBG] Public Client - skipping secret validation success
+2018-12-31 14:19:51.387 -05:00 [DBG] Client validation success
+2018-12-31 14:19:51.396 -05:00 [DBG] Start token request validation
+2018-12-31 14:19:51.407 -05:00 [DBG] Start resource owner password token request validation
+2018-12-31 14:19:51.436 -05:00 [DBG] IsActive called from: ResourceOwnerValidation
+2018-12-31 14:19:51.437 -05:00 [DBG] Resource owner password token request validation success.
+2018-12-31 14:19:51.449 -05:00 [INF] Token request validation success
+{"ClientId":"native_client","ClientName":"Console Movie Search","GrantType":"password","Scopes":"movie_api","AuthorizationCode":null,"RefreshToken":null,"UserName":"user5","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"user5","password":"***REDACTED***","scope":"movie_api","grant_type":"password","client_id":"native_client"},"$type":"TokenRequestValidationLog"}
+2018-12-31 14:19:51.479 -05:00 [DBG] Getting claims for access token for client: native_client
+2018-12-31 14:19:51.480 -05:00 [DBG] Getting claims for access token for subject: user5
+2018-12-31 14:19:51.486 -05:00 [DBG] Get profile called for subject user5 from client Console Movie Search with claim types ["role"] via ClaimsProviderAccessToken
+2018-12-31 14:19:51.490 -05:00 [DBG] Issued claims: ["role"]
+2018-12-31 14:19:51.529 -05:00 [DBG] Token request success.
+2018-12-31 14:19:53.254 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:19:53.254 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:19:53.255 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:19:53.255 -05:00 [DBG] Start discovery request
+2018-12-31 14:19:53.440 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:19:53.440 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:19:53.441 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:19:53.441 -05:00 [DBG] Start key discovery request
+2018-12-31 14:20:14.239 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2018-12-31 14:20:14.289 -05:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-12-31 14:20:14.303 -05:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2018-12-31 14:20:14.303 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2018-12-31 14:20:14.303 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2018-12-31 14:20:14.303 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2018-12-31 14:20:14.303 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2018-12-31 14:20:14.303 -05:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2018-12-31 14:20:14.549 -05:00 [DBG] Login Url: /Account/Login
+2018-12-31 14:20:14.551 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2018-12-31 14:20:14.551 -05:00 [DBG] Logout Url: /Account/Logout
+2018-12-31 14:20:14.551 -05:00 [DBG] ConsentUrl Url: /consent
+2018-12-31 14:20:14.551 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2018-12-31 14:20:14.551 -05:00 [DBG] Error Url: /home/error
+2018-12-31 14:20:14.551 -05:00 [DBG] Error Id Parameter: errorId
+2018-12-31 14:20:15.662 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:20:15.666 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:20:15.666 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:20:15.671 -05:00 [DBG] Start discovery request
+2018-12-31 14:20:15.794 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:20:15.795 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:20:15.795 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:20:15.800 -05:00 [DBG] Start key discovery request
+2018-12-31 14:20:16.740 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-12-31 14:20:16.748 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-12-31 14:20:16.748 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-12-31 14:20:16.754 -05:00 [DBG] Start authorize request
+2018-12-31 14:20:16.769 -05:00 [DBG] No user present in authorize request
+2018-12-31 14:20:16.776 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 14:20:16.804 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:16.814 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 14:20:16.867 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 14:20:16.893 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"native_client","ClientName":"Console Movie Search","RedirectUri":"http://127.0.0.1:12345/native_client_callback","AllowedRedirectUris":["http://127.0.0.1:12345/native_client_callback"],"SubjectId":"anonymous","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid movie_api","State":"3139211e264500901bfc5f48e2b68c79","UiLocales":null,"Nonce":"29b95d8a7d79adbb0dc6975670c3fa6a","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"code id_token","nonce":"29b95d8a7d79adbb0dc6975670c3fa6a","state":"3139211e264500901bfc5f48e2b68c79","code_challenge":"x1s5xspQqs1ufvSZLOkXtuVx6hR3wviYv96nrO17UTc","code_challenge_method":"S256","client_id":"native_client","scope":"openid movie_api","redirect_uri":"http://127.0.0.1:12345/native_client_callback","response_mode":"form_post"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 14:20:16.926 -05:00 [INF] Showing login: User is not authenticated
+2018-12-31 14:20:17.009 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 14:20:17.009 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:17.009 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 14:20:17.010 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 14:20:17.013 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:22.722 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 14:20:22.722 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:22.722 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 14:20:22.723 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 14:20:22.747 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 14:20:22.750 -05:00 [DBG] Adding idp claim with value: local
+2018-12-31 14:20:22.750 -05:00 [DBG] Adding amr claim with value: pwd
+2018-12-31 14:20:22.762 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 14:20:22.764 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:22.800 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 14:20:22.800 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 14:20:22.801 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 14:20:22.806 -05:00 [DBG] Start authorize callback request
+2018-12-31 14:20:22.812 -05:00 [DBG] User in authorize request: user5
+2018-12-31 14:20:22.812 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 14:20:22.812 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:22.812 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 14:20:22.812 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 14:20:22.812 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"native_client","ClientName":"Console Movie Search","RedirectUri":"http://127.0.0.1:12345/native_client_callback","AllowedRedirectUris":["http://127.0.0.1:12345/native_client_callback"],"SubjectId":"user5","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid movie_api","State":"3139211e264500901bfc5f48e2b68c79","UiLocales":null,"Nonce":"29b95d8a7d79adbb0dc6975670c3fa6a","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"5bbfe0e99bec1046f0d1744521eb01a0","Raw":{"response_type":"code id_token","nonce":"29b95d8a7d79adbb0dc6975670c3fa6a","state":"3139211e264500901bfc5f48e2b68c79","code_challenge":"x1s5xspQqs1ufvSZLOkXtuVx6hR3wviYv96nrO17UTc","code_challenge_method":"S256","client_id":"native_client","scope":"openid movie_api","redirect_uri":"http://127.0.0.1:12345/native_client_callback","response_mode":"form_post"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 14:20:22.814 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 14:20:22.831 -05:00 [DBG] user_consent grant with value: native_client|user5 not found in store.
+2018-12-31 14:20:22.832 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 14:20:22.832 -05:00 [INF] Showing consent: User has not yet consented
+2018-12-31 14:20:22.862 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 14:20:22.863 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:22.863 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 14:20:22.863 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 14:20:22.863 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:26.421 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 14:20:26.422 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:26.422 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 14:20:26.422 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 14:20:26.437 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:26.577 -05:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-12-31 14:20:26.577 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-12-31 14:20:26.577 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-12-31 14:20:26.578 -05:00 [DBG] Start authorize callback request
+2018-12-31 14:20:26.583 -05:00 [DBG] User in authorize request: user5
+2018-12-31 14:20:26.583 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 14:20:26.583 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:26.583 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 14:20:26.583 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 14:20:26.583 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"native_client","ClientName":"Console Movie Search","RedirectUri":"http://127.0.0.1:12345/native_client_callback","AllowedRedirectUris":["http://127.0.0.1:12345/native_client_callback"],"SubjectId":"user5","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid movie_api","State":"3139211e264500901bfc5f48e2b68c79","UiLocales":null,"Nonce":"29b95d8a7d79adbb0dc6975670c3fa6a","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"5bbfe0e99bec1046f0d1744521eb01a0","Raw":{"response_type":"code id_token","nonce":"29b95d8a7d79adbb0dc6975670c3fa6a","state":"3139211e264500901bfc5f48e2b68c79","code_challenge":"x1s5xspQqs1ufvSZLOkXtuVx6hR3wviYv96nrO17UTc","code_challenge_method":"S256","client_id":"native_client","scope":"openid movie_api","redirect_uri":"http://127.0.0.1:12345/native_client_callback","response_mode":"form_post"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 14:20:26.584 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 14:20:26.584 -05:00 [DBG] user_consent grant with value: native_client|user5 not found in store.
+2018-12-31 14:20:26.584 -05:00 [DBG] Found no prior consent from consent store, consent is required
+2018-12-31 14:20:26.591 -05:00 [INF] User consented to scopes: ["openid","movie_api"]
+2018-12-31 14:20:26.593 -05:00 [DBG] User indicated to remember consent for scopes: ["openid","movie_api"]
+2018-12-31 14:20:26.598 -05:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: user5
+2018-12-31 14:20:26.611 -05:00 [DBG] Creating Hybrid Flow response.
+2018-12-31 14:20:26.634 -05:00 [DBG] Creating Implicit Flow response.
+2018-12-31 14:20:26.643 -05:00 [DBG] Getting claims for identity token for subject: user5 and client: native_client
+2018-12-31 14:20:26.646 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 14:20:26.687 -05:00 [INF] Authorize endpoint response
+{"SubjectId":"user5","ClientId":"native_client","RedirectUri":"http://127.0.0.1:12345/native_client_callback","State":"3139211e264500901bfc5f48e2b68c79","Scope":"openid movie_api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2018-12-31 14:20:26.706 -05:00 [DBG] Augmenting SignInContext
+2018-12-31 14:20:26.706 -05:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-12-31 14:20:27.095 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:20:27.095 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:20:27.095 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:20:27.095 -05:00 [DBG] Start discovery request
+2018-12-31 14:20:27.100 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:20:27.100 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:20:27.100 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:20:27.100 -05:00 [DBG] Start key discovery request
+2018-12-31 14:20:27.313 -05:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-12-31 14:20:27.323 -05:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-12-31 14:20:27.323 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-12-31 14:20:27.334 -05:00 [DBG] Start token request.
+2018-12-31 14:20:27.343 -05:00 [DBG] Start client validation
+2018-12-31 14:20:27.351 -05:00 [DBG] Start parsing Basic Authentication secret
+2018-12-31 14:20:27.356 -05:00 [DBG] Start parsing for secret in post body
+2018-12-31 14:20:27.356 -05:00 [DBG] client id without secret found
+2018-12-31 14:20:27.356 -05:00 [DBG] Parser found secret: PostBodySecretParser
+2018-12-31 14:20:27.356 -05:00 [DBG] Secret id found: native_client
+2018-12-31 14:20:27.356 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:27.356 -05:00 [DBG] Public Client - skipping secret validation success
+2018-12-31 14:20:27.356 -05:00 [DBG] Client validation success
+2018-12-31 14:20:27.366 -05:00 [DBG] Start token request validation
+2018-12-31 14:20:27.378 -05:00 [DBG] Start validation of authorization code token request
+2018-12-31 14:20:27.390 -05:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2018-12-31 14:20:27.393 -05:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2018-12-31 14:20:27.394 -05:00 [DBG] Validation of authorization code token request success
+2018-12-31 14:20:27.396 -05:00 [INF] Token request validation success
+{"ClientId":"native_client","ClientName":"Console Movie Search","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"0d8f852d86df8b2e338c680f2b6360049f2fd1e3e73efcf269393916918557c5","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"authorization_code","code":"0d8f852d86df8b2e338c680f2b6360049f2fd1e3e73efcf269393916918557c5","redirect_uri":"http://127.0.0.1:12345/native_client_callback","code_verifier":"8bb8d32ab62a9b3e1a0ffd311ba870421a1e868813feac058aa20efd96c5ca11","client_id":"native_client"},"$type":"TokenRequestValidationLog"}
+2018-12-31 14:20:27.412 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:27.423 -05:00 [DBG] Getting claims for access token for client: native_client
+2018-12-31 14:20:27.423 -05:00 [DBG] Getting claims for access token for subject: user5
+2018-12-31 14:20:27.426 -05:00 [DBG] Get profile called for subject user5 from client Console Movie Search with claim types ["role"] via ClaimsProviderAccessToken
+2018-12-31 14:20:27.428 -05:00 [DBG] Issued claims: ["role"]
+2018-12-31 14:20:27.434 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:27.434 -05:00 [DBG] Getting claims for identity token for subject: user5 and client: native_client
+2018-12-31 14:20:27.434 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 14:20:27.440 -05:00 [DBG] Token request success.
+2018-12-31 14:20:27.459 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:20:27.460 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:20:27.460 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:20:27.460 -05:00 [DBG] Start discovery request
+2018-12-31 14:20:27.469 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:20:27.469 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:20:27.469 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:20:27.469 -05:00 [DBG] Start key discovery request
+2018-12-31 14:20:27.478 -05:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-12-31 14:20:27.479 -05:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-12-31 14:20:27.480 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-12-31 14:20:27.487 -05:00 [DBG] Start userinfo request
+2018-12-31 14:20:27.491 -05:00 [DBG] Bearer token found in header
+2018-12-31 14:20:27.517 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:27.521 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:20:27.522 -05:00 [DBG] IsActive called from: AccessTokenValidation
+2018-12-31 14:20:27.522 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 14:20:27.524 -05:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546284027,"exp":1546287627,"iss":"http://localhost:1941","aud":["http://localhost:1941/resources","movie_api"],"client_id":"native_client","sub":"user5","auth_time":1546284022,"idp":"local","role":"Admin","scope":["openid","movie_api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 14:20:27.525 -05:00 [DBG] IsActive called from: UserInfoRequestValidation
+2018-12-31 14:20:27.532 -05:00 [DBG] Creating userinfo response
+2018-12-31 14:20:27.536 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 14:20:27.539 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 14:20:27.541 -05:00 [DBG] Requested claim types: sub
+2018-12-31 14:20:27.542 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 14:20:27.542 -05:00 [DBG] Get profile called for subject user5 from client Console Movie Search with claim types ["sub"] via UserInfoEndpoint
+2018-12-31 14:20:27.542 -05:00 [DBG] Issued claims: []
+2018-12-31 14:20:27.542 -05:00 [INF] Profile service returned the following claim types: 
+2018-12-31 14:20:27.542 -05:00 [DBG] End userinfo request
+2018-12-31 14:27:06.441 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:27:06.442 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:27:06.442 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:27:06.442 -05:00 [DBG] Start discovery request
+2018-12-31 14:27:06.508 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:27:06.509 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:27:06.509 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:27:06.509 -05:00 [DBG] Start key discovery request
+2018-12-31 14:27:07.391 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-12-31 14:27:07.392 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-12-31 14:27:07.392 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-12-31 14:27:07.392 -05:00 [DBG] Start authorize request
+2018-12-31 14:27:07.392 -05:00 [DBG] User in authorize request: user5
+2018-12-31 14:27:07.392 -05:00 [DBG] Start authorize request protocol validation
+2018-12-31 14:27:07.392 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:27:07.392 -05:00 [DBG] Checking for PKCE parameters
+2018-12-31 14:27:07.393 -05:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-12-31 14:27:07.393 -05:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"native_client","ClientName":"Console Movie Search","RedirectUri":"http://127.0.0.1:12345/native_client_callback","AllowedRedirectUris":["http://127.0.0.1:12345/native_client_callback"],"SubjectId":"user5","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid movie_api","State":"d18ea4e68f68bcedbf025441bde252b3","UiLocales":null,"Nonce":"6c5d6e5037b5b33aae2f9d7275e5f92c","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"5bbfe0e99bec1046f0d1744521eb01a0","Raw":{"response_type":"code id_token","nonce":"6c5d6e5037b5b33aae2f9d7275e5f92c","state":"d18ea4e68f68bcedbf025441bde252b3","code_challenge":"WmKJuzmHInuLxnMNk9LzsKsLKLtpvxrmORjRCe6c_24","code_challenge_method":"S256","client_id":"native_client","scope":"openid movie_api","redirect_uri":"http://127.0.0.1:12345/native_client_callback","response_mode":"form_post"},"$type":"AuthorizeRequestValidationLog"}
+2018-12-31 14:27:07.393 -05:00 [DBG] IsActive called from: AuthorizeEndpoint
+2018-12-31 14:27:07.399 -05:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2018-12-31 14:27:07.400 -05:00 [DBG] Creating Hybrid Flow response.
+2018-12-31 14:27:07.400 -05:00 [DBG] Creating Implicit Flow response.
+2018-12-31 14:27:07.400 -05:00 [DBG] Getting claims for identity token for subject: user5 and client: native_client
+2018-12-31 14:27:07.400 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 14:27:07.405 -05:00 [INF] Authorize endpoint response
+{"SubjectId":"user5","ClientId":"native_client","RedirectUri":"http://127.0.0.1:12345/native_client_callback","State":"d18ea4e68f68bcedbf025441bde252b3","Scope":"openid movie_api","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2018-12-31 14:27:07.867 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:27:07.867 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:27:07.867 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:27:07.867 -05:00 [DBG] Start discovery request
+2018-12-31 14:27:07.885 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:27:07.885 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:27:07.885 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:27:07.886 -05:00 [DBG] Start key discovery request
+2018-12-31 14:27:08.068 -05:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-12-31 14:27:08.069 -05:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-12-31 14:27:08.069 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-12-31 14:27:08.069 -05:00 [DBG] Start token request.
+2018-12-31 14:27:08.069 -05:00 [DBG] Start client validation
+2018-12-31 14:27:08.069 -05:00 [DBG] Start parsing Basic Authentication secret
+2018-12-31 14:27:08.069 -05:00 [DBG] Start parsing for secret in post body
+2018-12-31 14:27:08.069 -05:00 [DBG] client id without secret found
+2018-12-31 14:27:08.069 -05:00 [DBG] Parser found secret: PostBodySecretParser
+2018-12-31 14:27:08.069 -05:00 [DBG] Secret id found: native_client
+2018-12-31 14:27:08.069 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:27:08.070 -05:00 [DBG] Public Client - skipping secret validation success
+2018-12-31 14:27:08.070 -05:00 [DBG] Client validation success
+2018-12-31 14:27:08.070 -05:00 [DBG] Start token request validation
+2018-12-31 14:27:08.070 -05:00 [DBG] Start validation of authorization code token request
+2018-12-31 14:27:08.070 -05:00 [DBG] Client required a proof key for code exchange. Starting PKCE validation
+2018-12-31 14:27:08.070 -05:00 [DBG] IsActive called from: AuthorizationCodeValidation
+2018-12-31 14:27:08.070 -05:00 [DBG] Validation of authorization code token request success
+2018-12-31 14:27:08.070 -05:00 [INF] Token request validation success
+{"ClientId":"native_client","ClientName":"Console Movie Search","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"8a58a483986555b261cd3ae1d8d5eb562eca360378e8e4127de89ac2ce96691d","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"authorization_code","code":"8a58a483986555b261cd3ae1d8d5eb562eca360378e8e4127de89ac2ce96691d","redirect_uri":"http://127.0.0.1:12345/native_client_callback","code_verifier":"a94297966cb7d90aa2c9f11bde8d95842fc609d41fbd2522eec03f2025c853a1","client_id":"native_client"},"$type":"TokenRequestValidationLog"}
+2018-12-31 14:27:08.071 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:27:08.071 -05:00 [DBG] Getting claims for access token for client: native_client
+2018-12-31 14:27:08.071 -05:00 [DBG] Getting claims for access token for subject: user5
+2018-12-31 14:27:08.071 -05:00 [DBG] Get profile called for subject user5 from client Console Movie Search with claim types ["role"] via ClaimsProviderAccessToken
+2018-12-31 14:27:08.071 -05:00 [DBG] Issued claims: ["role"]
+2018-12-31 14:27:08.075 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:27:08.075 -05:00 [DBG] Getting claims for identity token for subject: user5 and client: native_client
+2018-12-31 14:27:08.075 -05:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-12-31 14:27:08.080 -05:00 [DBG] Token request success.
+2018-12-31 14:27:08.097 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:27:08.097 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:27:08.097 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:27:08.097 -05:00 [DBG] Start discovery request
+2018-12-31 14:27:08.100 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:27:08.100 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:27:08.100 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:27:08.100 -05:00 [DBG] Start key discovery request
+2018-12-31 14:27:08.114 -05:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-12-31 14:27:08.114 -05:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-12-31 14:27:08.114 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-12-31 14:27:08.114 -05:00 [DBG] Start userinfo request
+2018-12-31 14:27:08.114 -05:00 [DBG] Bearer token found in header
+2018-12-31 14:27:08.117 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:27:08.118 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:27:08.118 -05:00 [DBG] IsActive called from: AccessTokenValidation
+2018-12-31 14:27:08.118 -05:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-12-31 14:27:08.118 -05:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1546284428,"exp":1546288028,"iss":"http://localhost:1941","aud":["http://localhost:1941/resources","movie_api"],"client_id":"native_client","sub":"user5","auth_time":1546284022,"idp":"local","role":"Admin","scope":["openid","movie_api"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2018-12-31 14:27:08.118 -05:00 [DBG] IsActive called from: UserInfoRequestValidation
+2018-12-31 14:27:08.118 -05:00 [DBG] Creating userinfo response
+2018-12-31 14:27:08.118 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 14:27:08.118 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 14:27:08.118 -05:00 [DBG] Requested claim types: sub
+2018-12-31 14:27:08.118 -05:00 [DBG] Scopes in access token: openid movie_api
+2018-12-31 14:27:08.118 -05:00 [DBG] Get profile called for subject user5 from client Console Movie Search with claim types ["sub"] via UserInfoEndpoint
+2018-12-31 14:27:08.118 -05:00 [DBG] Issued claims: []
+2018-12-31 14:27:08.118 -05:00 [INF] Profile service returned the following claim types: 
+2018-12-31 14:27:08.118 -05:00 [DBG] End userinfo request
+2018-12-31 14:27:30.362 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-12-31 14:27:30.362 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-12-31 14:27:30.362 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-12-31 14:27:30.362 -05:00 [DBG] Start discovery request
+2018-12-31 14:27:30.436 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-12-31 14:27:30.436 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-12-31 14:27:30.436 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-12-31 14:27:30.436 -05:00 [DBG] Start key discovery request
+2018-12-31 14:27:30.600 -05:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-12-31 14:27:30.601 -05:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-12-31 14:27:30.601 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-12-31 14:27:30.601 -05:00 [DBG] Start token request.
+2018-12-31 14:27:30.601 -05:00 [DBG] Start client validation
+2018-12-31 14:27:30.601 -05:00 [DBG] Start parsing Basic Authentication secret
+2018-12-31 14:27:30.601 -05:00 [DBG] Start parsing for secret in post body
+2018-12-31 14:27:30.601 -05:00 [DBG] client id without secret found
+2018-12-31 14:27:30.601 -05:00 [DBG] Parser found secret: PostBodySecretParser
+2018-12-31 14:27:30.601 -05:00 [DBG] Secret id found: native_client
+2018-12-31 14:27:30.601 -05:00 [DBG] client configuration validation for client native_client succeeded.
+2018-12-31 14:27:30.601 -05:00 [DBG] Public Client - skipping secret validation success
+2018-12-31 14:27:30.601 -05:00 [DBG] Client validation success
+2018-12-31 14:27:30.601 -05:00 [DBG] Start token request validation
+2018-12-31 14:27:30.613 -05:00 [DBG] Start resource owner password token request validation
+2018-12-31 14:27:30.615 -05:00 [ERR] ["native_client"] not authorized for resource owner flow, check the AllowedGrantTypes of client, request details: {"ClientId":"native_client","ClientName":"Console Movie Search","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"user5","password":"***REDACTED***","scope":"movie_api","grant_type":"password","client_id":"native_client"},"$type":"TokenRequestValidationLog"}
